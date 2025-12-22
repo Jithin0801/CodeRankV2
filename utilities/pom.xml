@@ -5,25 +5,15 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <relativePath />
-        <version>4.0.0</version>
+        <groupId>com.code.rank</groupId>
+        <artifactId>builddriver</artifactId>
+        <version>1.0</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
-
-    <groupId>com.code.rank</groupId>
     <artifactId>util</artifactId>
-    <version>${projectVersion}</version>
+    <packaging>jar</packaging>
     <name>utilities</name>
     <description>Common utility functions and helpers for CodeRankV2 modules and microservices.</description>
-    <packaging>jar</packaging>
-
-    <dependencies>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
-        </dependency>
-    </dependencies>
 
     <properties>
         <basePath>${project.basedir}</basePath>
