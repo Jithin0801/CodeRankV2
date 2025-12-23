@@ -7,7 +7,7 @@
     <parent>
         <groupId>com.code.rank</groupId>
         <artifactId>builddriver</artifactId>
-        <version>1.0</version>
+        <version>${projectVersion}</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>util</artifactId>
@@ -15,13 +15,8 @@
     <name>utilities</name>
     <description>Common utility functions and helpers for CodeRankV2 modules and microservices.</description>
 
-    <properties>
-        <basePath>${project.basedir}</basePath>
-    </properties>
-
-
     <build>
-        <directory>${basePath}\target\compiler\${project.artifactId}</directory>
+        <directory>../target/${project.artifactId}</directory>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -31,7 +26,6 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <outputDirectory>${project.build.outputDirectory}</outputDirectory>
                 </configuration>
             </plugin>
             <plugin>
@@ -44,7 +38,6 @@
                             <Build-By>${user}</Build-By>
                         </manifestEntries>
                     </archive>
-                    <outputDirectory>${basePath}\target\jars</outputDirectory>
                 </configuration>
             </plugin>
         </plugins>

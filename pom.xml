@@ -13,7 +13,7 @@
 
     <groupId>com.code.rank</groupId>
     <artifactId>builddriver</artifactId>
-    <version>1.0</version>
+    <version>${projectVersion}</version>
     <name>build-driver</name>
     <description>Main build driver for assembling and orchestrating the compilation and packaging of Java modules and microservices.</description>
     <packaging>pom</packaging>
@@ -24,7 +24,7 @@
     </modules>
 
     <properties>
-        <java.version>25</java.version>
+        <java.version>${javaVersion}</java.version>
     </properties>
 
     <dependencies>
@@ -115,7 +115,6 @@
             <artifactId>spring-boot-starter-webmvc-test</artifactId>
             <scope>test</scope>
         </dependency>
-
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>

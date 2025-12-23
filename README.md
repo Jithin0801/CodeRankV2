@@ -1,6 +1,6 @@
 # CodeRankV2
 
-Clone the project and build it with the command: mvn clean install -DprojectVersion=1.0 -Duser=Jithin
+Clone the project and build it with the command: mvn clean install -DprojectVersion=1.0 -Duser=Jithin -DjavaVersion=25
 
 Changes (Dec 6, 2025):
 -Added base project structure

@@ -3,17 +3,17 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-    <parent>
-        <groupId>com.code.rank</groupId>
-        <artifactId>builddriver</artifactId>
-        <version>1.0</version>
-        <relativePath>../pom.xml</relativePath>
-    </parent>
-    
-    <artifactId>admin</artifactId>
-    <packaging>jar</packaging>
-    <name>admin</name>
-    <description>CodeRank V2</description>
+	<parent>
+		<groupId>com.code.rank</groupId>
+		<artifactId>builddriver</artifactId>
+		<version>${projectVersion}</version>
+		<relativePath>../pom.xml</relativePath>
+	</parent>
+
+	<artifactId>admin</artifactId>
+	<packaging>jar</packaging>
+	<name>admin</name>
+	<description>CodeRank V2</description>
 	<dependencies>
 		<dependency>
 			<groupId>com.code.rank</groupId>
@@ -23,6 +23,7 @@
 	</dependencies>
 
 	<build>
+		<directory>../target/${project.artifactId}</directory>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
