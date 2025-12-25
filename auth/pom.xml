@@ -10,15 +10,20 @@
 		<relativePath>../pom.xml</relativePath>
 	</parent>
 
-	<artifactId>admin</artifactId>
-	<packaging>jar</packaging>
-	<name>admin</name>
-	<description>CodeRank V2</description>
+	<artifactId>auth</artifactId>
+	<packaging>war</packaging>
+	<name>auth</name>
+	<description>auth</description>
 	<dependencies>
 		<dependency>
 			<groupId>com.code.rank</groupId>
 			<artifactId>util</artifactId>
 			<version>${revision}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
 		</dependency>
 	</dependencies>
 
@@ -34,6 +39,13 @@
 							<artifactId>lombok</artifactId>
 						</path>
 					</annotationProcessorPaths>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<configuration>
+					<failOnMissingWebXml>false</failOnMissingWebXml>
 				</configuration>
 			</plugin>
 			<plugin>
@@ -54,7 +66,7 @@
 						</goals>
 						<configuration>
 							<classifier>tomcat</classifier>
-							<mainClass>com.code.rank.admin.AdminApplication</mainClass>
+							<mainClass>com.code.rank.auth.AuthApplication</mainClass>
 						</configuration>
 					</execution>
 				</executions>

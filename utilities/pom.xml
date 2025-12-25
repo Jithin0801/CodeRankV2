@@ -7,7 +7,7 @@
     <parent>
         <groupId>com.code.rank</groupId>
         <artifactId>builddriver</artifactId>
-        <version>${projectVersion}</version>
+        <version>${revision}</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
     <artifactId>util</artifactId>
@@ -16,7 +16,6 @@
     <description>Common utility functions and helpers for CodeRankV2 modules and microservices.</description>
 
     <build>
-        <directory>../target/${project.artifactId}</directory>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

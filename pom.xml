@@ -7,24 +7,26 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>4.0.0</version>
+        <version>4.0.1</version>
         <relativePath />
     </parent>
 
     <groupId>com.code.rank</groupId>
     <artifactId>builddriver</artifactId>
-    <version>${projectVersion}</version>
+    <version>${revision}</version>
     <name>build-driver</name>
     <description>Main build driver for assembling and orchestrating the compilation and packaging of Java modules and microservices.</description>
     <packaging>pom</packaging>
 
     <modules>
         <module>utilities</module>
+        <module>auth</module>
         <module>admin</module>
     </modules>
 
     <properties>
         <java.version>${javaVersion}</java.version>
+        <revision>${projectVersion}</revision>
     </properties>
 
     <dependencies>
